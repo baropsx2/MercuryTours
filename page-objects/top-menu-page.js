@@ -1,4 +1,4 @@
-const TopMenuPage = {
+const TopBarMenuPage = {
 
     clickSignOnButton: function(){
         element(by.linkText('SIGN-ON')).click();

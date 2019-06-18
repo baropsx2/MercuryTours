@@ -84,7 +84,13 @@ const RegisterUserPage = {
         this.setCountryElementByName(user.country);
         this.getUserNameInputElement().sendKeys(user.username);
         this.getRegPasswordInputElement().sendKeys(user.password);
-        this.getConfirmPasswordInputElement().sendKeys(user.confpassword);
+        this.getConfirmPasswordInputElement().sendKeys(user.confPassword);
+        this.clickSubmitButton();
+
+    },
+
+    //Submit Registration (Clicking the submit button)
+    clickSubmitButton: function(){
         element(by.xpath('//input[@name="register"]')).click();
     },
 
